@@ -52,7 +52,7 @@ class HttpRequest
     method = method.upcase.to_s
     request = {}
     request = headers
-    if method == "POST" || method == "PUT" || method == "GET"
+    if method == "POST" || method == "PUT" || method == "GET" || method == "PATCH"
       #if request["Content-Type"]
       #  request["Content-Type"] = 'application/x-www-form-urlencoded'
       #end
