@@ -12,6 +12,10 @@ class HttpRequest
     request("POST", url, body, headers, &b)
   end
 
+  def patch(url, body = nil, headers = {}, &b)
+    request("PATCH", url, body, headers, &b)
+  end
+
   def put(url, body = nil, headers = {}, &b)
     request("PUT", url, body, headers, &b)
   end
